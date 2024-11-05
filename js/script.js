@@ -1,11 +1,12 @@
 function init(){
-    //add your javascrip between these two lines of code
-     
-    
-    
-    
-    
-    
-    
+    var alertButton = document.getElementById('entrybutton');
 
-    window.addEventListener('load', init);}
+    function displayMessage() {
+        var userInput = document.getElementById('entryinput');
+        document.getElementById('textoutput').textContent = userInput.value;
+        alert("Sanchit Popli: " + userInput.value);
+    }
+
+    alertButton.addEventListener('click', displayMessage);
+}
+    window.addEventListener('load', init);
